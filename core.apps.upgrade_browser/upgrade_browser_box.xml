@@ -1,0 +1,22 @@
+<tpl name="upgrade_browser_box">
+   
+    <div class="upgrade_browser">
+        <div class="text_popup" id="window">
+            <div class="text_popup_content">
+                <include tpl="upgrade_browser"/>
+            </div>
+
+            <div class="control_close" events="onclick=onHideClick">CLOSE</div>
+
+            <div class="border_l"></div>
+            <div class="border_r"></div>
+            <div class="border_t"></div>
+            <div class="border_tl"></div>
+            <div class="border_tr"></div>
+            <div class="border_b"></div>
+            <div class="border_bl"></div>
+            <div class="border_br"></div>
+        </div>
+    </div>
+
+</tpl>

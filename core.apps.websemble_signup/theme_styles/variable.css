@@ -1,0 +1,59 @@
+/*websemble_signup|Box*/
+.websemble_signup {
+    margin:0 20px;
+}
+
+/*form_box|Form*/
+.form_box {
+    margin: 8px 0 16px 0;
+}
+
+/*input|Text input*/
+input {
+    width: 99%;
+    font-size: 1.5em;
+}
+
+/*input_empty|Text input empty*/
+input.empty {
+    color: #AAA;
+}
+
+/*button|Button*/
+button {
+    color:#FF6600;
+    font-size:22px;
+    font-weight:bold;
+    height:40px;
+    width:110px;
+}
+
+/*checkbox|Checkbox*/
+input[type="checkbox"] {
+    float: left;
+    width: 20px;
+    margin-left: 0;
+}
+
+
+/*ws1|ws*/
+table {
+    width: 100%;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*ws2|ws*/
+table td {
+    margin: 0;
+    padding: 0;
+    vertical-align: center;
+}
+
+/*ws3|ws*/
+table .facebook {
+    width: 170px;
+    background: url(/static/app_websemble_signup/splitter.png) no-repeat 10px center;
+    text-align: right;
+}

@@ -1,0 +1,34 @@
+<tpl name="layout_styler">
+
+    <div class="layout_styler">
+        <div class="tabs_bar">
+            <a id="btn_tab_settings" key="settings" events="onclick=onTabClick"><span>Settings</span></a>
+            <a id="btn_tab_styles_list" key="styles_list" events="onclick=onTabClick"><span>Style</span></a>
+            <a id="btn_tab_bg_image" key="bg_image" events="onclick=onTabClick"><span>Background image</span></a>
+        </div>
+
+        <wsc_box>
+            <div class="settings" id="tab_settings" style="display: none">
+                <div class="form_row">
+                    <label>Title</label>
+                    <wsc_text id="inp_title"/>
+                </div>
+            </div>
+
+            <div class="styles_list" id="tab_styles_list" style="display: none"></div>
+
+            <div class="bg_image" id="tab_bg_image" style="display: none">
+                <div id="img_preview" class="preview"></div>
+                <div class="preview_controls">
+                    <a events="onclick=onSelectImageClick">Select image</a>
+                </div>
+            </div>
+        </wsc_box>
+    </div>
+
+    <div class="popup_buttons"><div class="popup_buttons_wrapper">
+        <wsc_button class="float_left" events="onclick=onClearClick" title=" Clear "/>
+        <wsc_button class="float_right" events="onclick=onCloseClick" title=" Cancel "/>
+        <wsc_button class="float_right" events="onclick=onSaveClick" title=" Ok "/>
+    </div></div>
+</tpl>

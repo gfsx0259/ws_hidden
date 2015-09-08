@@ -1,0 +1,7 @@
+<tpl name="layout_app_styler">
+    <div class="layout_app_styler" id="list"></div>
+
+    <div class="popup_buttons"><div class="popup_buttons_wrapper">
+        <wsc_button class="float_right" events="onclick=onCloseClick" title=" Cancel "/>
+    </div></div>
+</tpl>

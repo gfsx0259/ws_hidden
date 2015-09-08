@@ -1,0 +1,30 @@
+<tpl name="site_settings_emails">
+    <div id="content_emails" style="display: none">
+
+        <div class="form_row">
+            <label>General</label>
+            <wsc_select id="inp_email_general" editable="1"/>
+        </div>
+
+        <div class="form_row">
+            <label>Contact us</label>
+            <wsc_select id="inp_email_contact_us" editable="1"/>
+        </div>
+
+        <div class="form_row">
+            <label>Webmaster</label>
+            <wsc_select id="inp_email_webmaster" editable="1"/>
+        </div>
+
+        <div class="form_row">
+            <label>Newsletter</label>
+            <wsc_select id="inp_email_newsletter" editable="1"/>
+        </div>
+
+        <div class="form_row">
+            <label>Sales</label>
+            <wsc_select id="inp_email_sales" editable="1"/>
+        </div>
+
+    </div>
+</tpl>    

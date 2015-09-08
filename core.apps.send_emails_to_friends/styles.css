@@ -1,0 +1,71 @@
+
+.send_email_to_freinds_manager {
+    width: 830px;
+    height: 480px;
+	padding:0px;
+	margin:0px;
+}
+.send_email_to_freinds_manager1 {
+    width: 830px;
+    height: 280px;
+	padding:0px;
+	margin:0px;
+}
+.send_email_to_freinds_textbox
+{
+	color:#EEE;
+}
+.send_email_to_freinds_textbox
+{
+	color:#CCC;
+}
+.send_email_to_freinds_textbox1
+{
+	color:#000;
+}
+.send_email_to_freinds_backround 
+{
+background-color:#EEE;
+padding-left:0px;
+float:left;
+padding-right:0px;
+}
+
+
+  .send_email_to_freinds_menu .send_to_friend_email_keys {
+        float: left;
+        margin: 0 0 0 12px;
+        width: 160px;
+		margin-bottom:110px; 
+    }
+	.send_email_to_freinds_menu h3
+	{
+	margin:0px;
+	padding:0px;
+	padding-left:25px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+	font-weight:bold;
+	}
+
+        .send_to_friend_email_keys .key {
+            display: block;
+            width: auto;
+            margin: 4px 0px;
+            background: #DDD;
+            color: blue;
+            padding: 2px 4px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+.send_email_to_freinds_span_class
+{
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:bold;
+}
+.send_email_to_freinds_send_check
+{
+padding-bottom:5px;
+}

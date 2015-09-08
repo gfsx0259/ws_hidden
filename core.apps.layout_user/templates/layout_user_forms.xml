@@ -1,0 +1,99 @@
+<tpl name="layout_user_forms">
+
+    <div class="no_columns" id="content">
+    <div class="layout_user_form">
+
+        <!-- login -->
+
+        <div id="login_form" style="display: none">
+            <div class="message_error" id="l_error" style="display: none">Incorrect user details</div>
+            <label>Email:</label>
+            <input type="text" id="inp_l_email" class="text" events="onenter=onLoginClick"/>
+            <label>Password:</label>
+            <input type="password" id="inp_l_pwd" class="text" events="onenter=onLoginClick"/>
+            <label style="display: none">
+                <input type="checkbox" id="inp_l_remember_me"/> Remember me on this computer
+            </label>
+            <button id="btn_l_submit" class="submit" events="onclick=onLoginClick"> Go </button>
+            <div class="info">Forgot password? Click <a href="/user/?mode=reset_pwd">here</a></div>
+        </div>
+
+
+
+        <!-- register -->
+
+        <div id="register_form" style="display: none">
+            <div id="sec_reg_reason" style="display: none">
+                <div id="reg_msg" class="info"></div>
+                <textarea id="inp_r_reg_reason" style="width:100%; height: 50px;"/>
+            </div>
+            <label>Name:</label>
+            <input type="text" id="inp_r_name" class="text" events="onenter=onRegisterClick"/>
+            <label>Email:</label>
+            <input type="text" id="inp_r_email" class="text" events="onenter=onRegisterClick"/>
+            <label>Password:</label>
+            <input type="password" id="inp_r_pwd" class="text" events="onenter=onRegisterClick"/>
+            <label>Confirm password:</label>
+            <input type="password" id="inp_r_pwd2" class="text" events="onenter=onRegisterClick"/>
+            <div style="margin-top: 24px;">
+                <img id="reg_captcha_img" class="captcha"/> 
+                <label>Repeat numbers</label>
+                <input type="text" id="inp_r_captcha_code" class="text" events="onenter=onRegisterClick" style="width: 50px; display: inline"/>
+            </div>
+            <div class="message_error" id="r_error" style="display: none"></div>
+            <button id="btn_r_submit" class="submit" events="onclick=onRegisterClick"> Go </button>
+        </div>
+
+
+        <div id="register_info" style="display: none">
+            <div id="msg_reg_waiting_approval" class="message_info" style="display: none">
+                Your account waiting admin approval.
+            </div>
+            <div id="msg_reg_confirmation_email_sent" class="message_info" style="display: none">
+                Success. Email with confirmation link was sent. Follow it to activate account.
+            </div>
+            <div id="msg_reg_registered" class="message_info" style="display: none">
+                Account registered.
+            </div>
+        </div>
+
+
+        <div id="msg_reg_confirmed" style="display: none">
+            <div class="message_info">Success. Your account activated.</div>
+        </div>
+
+        <div id="msg_reg_not_confirmed" style="display: none">
+            <div class="message_error">Error. Invalid code.</div>
+        </div>
+
+
+        <div id="msg_subscription_confirmed" style="display: none">
+            <div class="message_info">Success. Your subscription activated.</div>
+        </div>
+
+
+
+        <!-- reset pwd -->
+
+        <div id="reset_pwd_form" style="display: none">
+            <label>Enter your Email:</label>
+            <input type="text" id="inp_rp_email" class="text"  events="onenter=onResetPwdClick"/>
+            <button id="btn_rp_submit" class="submit" events="onclick=onResetPwdClick"> Go </button>
+        </div>
+
+        <div id="reset_pwd_info" style="display: none">
+            <div class="message_info">Email with instructions was sent.</div>
+        </div>
+
+
+        <div id="msg_reset_pwd_success" style="display: none">
+            <div class="message_info">New password sent to your email.</div>
+        </div>
+
+        <div id="msg_reset_pwd_error" style="display: none">
+            <div class="message_error">Error. Invalid code.</div>
+        </div>
+
+    </div>
+    </div>
+</tpl>

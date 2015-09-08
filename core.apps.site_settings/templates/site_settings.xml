@@ -1,0 +1,44 @@
+<tpl name="site_settings">
+    <div class="popup_panels site_settings">
+        <div class="popup_left_panel_box">
+            <wsc_box>
+                <div class="popup_sidebar">
+                    <a id="bar_emails" bar_name="emails" href="void" events="onclick=onBarClick">
+                        <img src="/static/folders/mail.png"/>Emails
+                    </a>
+                    <a id="bar_ads" bar_name="ads" events="onclick=onBarClick">
+                        <img src="/static/folders/ads.png"/>Embeded code
+                    </a>
+                    <a id="bar_rss" bar_name="rss" events="onclick=onBarClick">
+                        <img src="/static/folders/rss.png"/>RSS
+                    </a>
+                    <a id="bar_timezone" bar_name="timezone" events="onclick=onBarClick">
+                        <img src="/static/folders/time.png"/>Time zone
+                    </a>
+                    <a id="bar_misc" bar_name="misc" events="onclick=onBarClick">
+                        <img src="/static/folders/folder.png"/>Miscellaneous
+                    </a>
+                </div>
+            </wsc_box>
+        </div>
+
+
+        <div class="popup_right_panel_box" id="sections_content">
+            <wsc_box>
+                <div class="popup_right_panel">
+                    <include tpl="site_settings_emails"/>
+                    <include tpl="site_settings_ads"/>
+                    <include tpl="site_settings_rss"/>
+                    <include tpl="site_settings_timezone"/>
+                    <include tpl="site_settings_misc"/>
+                </div>
+            </wsc_box>
+        </div>
+    </div>
+
+
+    <div class="popup_buttons"><div class="popup_buttons_wrapper">
+        <wsc_button class="float_right" title=" Cancel " events="onclick=onCloseClick"/>
+        <wsc_button class="float_right" title=" Save " events="onclick=onSaveClick"/>
+    </div></div>
+</tpl>

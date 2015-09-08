@@ -1,0 +1,54 @@
+<tpl name="site_settings_ads">
+    <div id="content_ads" style="display: none;overflow:hidden">
+
+        <div class="tabs_bar" style="margin-bottom: 10px;">
+            <a id="btn_tab_advertising" key="advertising" events="onclick=onAdsTabClick">
+                <span>Advertising</span>
+            </a>
+            <a id="btn_tab_analytics" key="analytics" events="onclick=onAdsTabClick">
+                <span>Analytics</span>
+            </a>
+            <a id="btn_tab_page_header" key="page_header" events="onclick=onAdsTabClick">
+                <span>Page header</span>
+            </a>
+            <a id="btn_tab_page_footer" key="page_footer" events="onclick=onAdsTabClick">
+                <span>Page footer</span>
+            </a>
+        </div>
+
+
+        <div id="tab_advertising" style="display: none">
+            <div style="height: 40px">You can enter the code given to you by Google Adsense or other programs to display advertising on your site.  You can learn about Google Adsense at <a href='http://adsense.google.com' target='_blank'>http://adsense.google.com</a></div>
+            <wsc_textarea style="width: 100%; height: 328px" id="inp_ads_code"/>
+        </div>
+
+
+        <div id="tab_analytics" style="display: none">
+            <div id="box_analytics_allowed">
+                <div style="height: 40px">Analytics code</div>
+                <wsc_textarea style="width: 100%; height: 328px" id="inp_analytics_code"/>
+            </div>
+
+            <div id="box_analytics_not_allowed" class="message_info" style="display: none">Upgrade your account to enable this feature.</div>
+        </div>
+
+
+        <div id="tab_page_header" style="display: none">
+            <div style="height: 40px">Default header document</div>
+            <wsc_box>
+                <div style="width: 100%; height: 305px; overflow: auto" id="header_doc_preview"></div>
+            </wsc_box>
+            <div style="padding-left: 10px">
+                <a events="onclick=onSelectHeaderDocClick">select document</a> |
+                <a events="onclick=onRemoveHeaderDocClick">remove document</a>
+            </div>
+        </div>
+
+
+        <div id="tab_page_footer" style="display: none">
+            <div style="height: 40px">Whatever you enter here will appear at the bottom of every page. You can override this by editing the footer code for individual pages in the page manager. <span style='font-weight: bold;'>You can enter either plain text or html code.</span></div>
+            <wsc_textarea style="width: 100%; height: 328px" id="inp_footer_code"/>
+        </div>
+
+    </div>
+</tpl>    

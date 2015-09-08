@@ -1,0 +1,114 @@
+<tpl name="send_emails_to_friends">
+    <div id="send_email_to_freinds_manager_panel" class="send_email_to_freinds_manager1">
+        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr>
+            <td>
+                <!--start-->
+                    
+                        <div style="width:123px; float:left; margin-top:10px; margin-left:10px;"><div><img src="/static/images/step1_img.gif" /></div>
+                        <div class="send_email_to_freinds_text">Add the email addresses of the people you want to send the message to.</div>
+                        </div>
+                        <div style="float:left; width:17px; padding-top:23px;"><img src="static/images/arrow.gif" width="17" height="45" /></div>
+                        <div style="width:669px; float:left; margin-top:10px;">
+                        <!--start a first part-->
+                        <div style="float:left;">
+                            <div style="float:left;height:9px; line-height:9px; "><img src="static/images/left_corner.gif" /></div>
+                            <div style="float:left; width:650px; background-color:#EEEEEE; height:9px;"></div>
+                            <div style="float:left;height:9px; line-height:9px;"><img src="static/images/right.gif" /></div>
+                            </div>
+                            <!--content part-->
+                            <div style="float:left; width:668px; background-color:#EEEEEE;">
+                            <div style="padding-left:10px; padding-right:10px;">
+                            <div class="send_email_to_freinds_send_check">
+      <label>
+      <input type='checkbox' id='send_to_all_user_option' value="Y" events="onclick=hideShowRecipientSection" />
+      </label>Send to all users ln your user list.<span id="send_email_to_freinds_user_count"></span> </div>
+    <div style="padding-bottom:5px;" id="send_email_to_freinds_add_res_sec">
+      <label>
+      <input style="width:252px; margin-right:5px;" type="text" class="send_email_to_freinds_textbox"  events="onfocus=onFocusUserNameBox" id="username_txt_box" value="Type name here..." />
+      </label>
+         <label>
+      <input style="width:260px; margin-right:5px;" value="Type email address here..." class="send_email_to_freinds_textbox" events="onfocus=onFocusEmailBox" id="email_txt_box" type="text" />
+    </label>
+      <input type='button' id='send_to_add_recipient' value="Add recipient" events="onclick=onAddRecipient" />
+      
+    </div>
+    <div class="send_email_to_freinds_send_check" id="send_email_to_freinds_check_res_sec">
+      <label>
+      <input type='checkbox' id='add_to_recipient_option' value="Y"  />
+      </label>Add recipient to the user list </div>
+    <div class="send_email_to_freinds_email_adress" id="added_recipients_emails"></div> 
+    <div style="padding-left:570px;">
+      <input type="button" id="send_email_to_freinds_edit_button" events="onclick=onEditMode" value="Edit list" style="display:none" />
+    </div>
+                            </div>
+                            </div>
+                            <!--end of content part-->
+                        <div style="float:left; height:8px; line-height:8px;"><img src="static/images/left_corner_V.gif" /></div>
+                            <div style="float:left; width:650px; background-color:#EEEEEE; height:8px;"></div>
+                            <div style="float:left;height:8px; line-height:8px; padding-bottom:20px;"><img src="static/images/right_v.gif" /></div>
+                            <!--end of first part-->
+                </div>
+                <!--end-->
+                <!--start-->
+                    
+                        <div style="width:123px; float:left; margin-left:10px;"><div><img src="/static/images/step2_img.gif" /></div>
+                        <div class="send_email_to_freinds_text">Choose the messsage you want to send the or type your own.</div>
+                        </div>
+                        <div style="float:left; width:17px; padding-top:23px;"><img src="static/images/arrow.gif" width="17" height="45" /></div>
+                        <div style="width:669px; float:left;">
+                        <!--start a first part-->
+                        <div style="float:left;">
+                            <div style="float:left;height:9px; line-height:9px; "><img src="static/images/left_corner.gif" /></div>
+                            <div style="float:left; width:650px; background-color:#EEEEEE; height:9px;"></div>
+                            <div style="float:left;height:9px; line-height:9px;"><img src="static/images/right.gif" /></div>
+                            </div>
+                            <!--content part-->
+<table class="send_email_to_freinds_backround" width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td style="width:60%;">
+        <div style="padding-bottom:5px; padding-left:10px; margin:0px;"><strong>Message to send:</strong></div>
+        <div style="padding-bottom:15px; padding-left:10px;">
+          <label>
+          <select id="send_to_friend_template" name="send_to_friend_template" style="width:620px;" events="onchange=onChangeTemplate"><option>Loading..</option></select>
+          </label>
+        </div>
+        <div style="padding-bottom:15px;display:none"  id="send_to_friend_email_subject_panel"><span class="send_email_to_freinds_span_class" style="padding-right:10px;">Subject:</span>
+         <input type="text"  id="inp_send_to_friend_email_subject" events="onfocus=setActiveInput;onblur=clearActiveInput" style="width:392px;" />
+        </div>
+        <div style="display:none" id="send_to_friend_email_body_panel"><span class="send_email_to_freinds_span_class" style="padding-bottom:15px;">
+          <textarea name="textarea" id="inp_send_to_friend_email_body" style="width:450px; height:150px;" events="onfocus=setActiveInput;onblur=clearActiveInput" ></textarea>
+        </span></div>       </td>
+        <td valign="top" style="width:40%; padding-right:10px;">
+        <div class="send_email_to_freinds_menu" style="display:none" id="send_to_friend_email_placeholder_panel">
+        <h3>Placeholder</h3>
+        <div class="send_to_friend_email_keys" id="send_to_friend_email_keys"></div>
+        </div>      </td>
+      </tr>
+    </table>
+                            <!--end of content part-->
+                        <div style="float:left; height:8px; line-height:8px; "><img src="static/images/left_corner_V.gif" /></div>
+                            <div style="float:left; width:650px; background-color:#EEEEEE; height:8px;"></div>
+                            <div style="float:left;height:8px; line-height:8px; margin-bottom:15px;"><img src="static/images/right_v.gif" /></div>
+                            <!--end of first part-->
+                </div>
+                <!--end-->
+                
+                
+
+            </td>
+        </tr>
+        <tr>
+            <td align='right'><div id="send_to_friend_email_message" style="background:#E5F5D7; height:47px; border:1px #008000 solid; text-align:center; line-height:47px; vertical-align:middle; font-family:Arial, Helvetica, sans-serif; font-size:25px; font-weight:bold;width:80%;">Sending Complete</div></td>
+        </tr>
+        </table>
+        
+    </div>
+
+
+    <div class="popup_buttons"><div class="popup_buttons_wrapper">
+        <input type="button" class="float_right" value=" Cancel " events="onclick=onCancelClick"/>
+        <input type="button" class="float_right" value=" Send " events="onclick=onSendClick"/>
+    </div></div>
+
+</tpl>

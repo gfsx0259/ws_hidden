@@ -1,0 +1,54 @@
+.upgrade_browser {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 1px;
+    height: 1px;
+    font: normal 12px Tahoma;
+    color: #000;
+    z-index: 100000;
+}
+
+
+    .upgrade_browser .text_popup {
+        position: relative;
+        width: 800px;
+        margin: -125px 0 0 -400px;
+    }
+
+
+    .upgrade_browser p {
+        text-align: justify;
+    }
+
+
+    .upgrade_browser .list {
+        margin-top: 40px;
+        height: 150px;
+    }
+
+
+        .upgrade_browser a.list_item,
+        .upgrade_browser a.list_item:hover {
+            float: left;
+            width: 100px;
+            text-align: center;
+            text-decoration: none;
+            background: transparent;
+            font: normal 16px Tahoma;
+            margin: 1px 20px;
+            padding: 10px;
+            outline: none;
+            color: #00F;
+        }
+
+        .upgrade_browser a.list_item:hover {
+            background: #D5E3F3;
+            border: 1px solid #9BBEF0;
+            margin: 0 19px;
+        }
+
+        .upgrade_browser a.list_item img {
+            border: 0;
+            margin-bottom: 8px;
+        }

@@ -1,0 +1,40 @@
+.forum_categories_editor {
+    width: auto;
+}
+
+    .forum_categories_editor .list {
+        width: auto;
+        margin: 12px 0;
+    }
+
+
+    .forum_categories_editor .category {
+        width: auto;
+        background: #EEF;
+        width: auto;
+        padding: 12px;
+        margin: 4px 0;
+    }
+
+
+
+        .forum_categories_editor .category input {
+            border: 1px solid #AAF;
+            width: auto;
+        }
+
+        .forum_categories_editor .category textarea {
+            border: 1px solid #AAF;
+            width: auto;
+            height: 40px;
+        }
+
+
+
+
+
+    .forum_categories_editor .category_controls {
+        width: auto;
+        margin: 6px 0;
+        text-align: right;
+    }

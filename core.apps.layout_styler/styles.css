@@ -1,0 +1,87 @@
+.layout_styler {
+    width: 710px;
+    padding: 5px 5px 0 5px;
+}
+
+    
+    .layout_styler .style_preview_box {
+        float: left;
+        border: 1px solid #ADC0E0;
+        margin: 5px;
+        padding: 0;
+        width: 160px;
+        float: left;
+        position: relative;
+    }
+
+        .layout_styler .style_preview_box .layout_row_box {
+            width: auto;
+            float: none;
+        }
+
+        .layout_styler .style_preview_box .style_title {
+            border-bottom: 1px solid #ADC0E0;
+            text-align: center;
+        }
+
+
+    .layout_styler .tabs_bar {
+        margin: 0 5px;
+        border: 0;
+    }
+
+    .layout_styler .settings,
+    .layout_styler .styles_list {
+        height: 400px;
+        overflow: auto;
+    }
+
+        
+        .layout_styler .item {
+            width: 20%;
+            float: left;
+            cursor: pointer;
+            position: relative;
+        }
+
+
+        .layout_styler .layout_row_box,
+        .layout_styler .layout_row {
+            width: auto;
+        }
+
+        .layout_styler .layout_row,
+        .layout_styler .lcell_mc {
+            height: 60px;
+        }
+
+
+        .layout_styler .active_icon {
+            position: absolute;
+            z-index: 10;
+            left: 50%;
+            top: 50%;
+            width: 108px;
+            height: 100px;
+            margin: -50px 0 0 -54px;
+            background: transparent url(/static/images/selected.png) no-repeat;
+        }
+
+
+    .layout_styler .bg_img {
+        height: 400px;
+        overflow: auto;
+    }
+
+        .layout_styler .preview {
+            width: auto;
+            height: 370px;
+            overflow: auto;
+            background-position: 50% 50%;
+            border-bottom: 1px solid #99D;
+        }
+
+        .layout_styler .preview_controls {
+            height: 30px;
+            padding: 0 8px;
+        }

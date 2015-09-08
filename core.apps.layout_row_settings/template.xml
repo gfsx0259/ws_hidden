@@ -1,0 +1,7 @@
+<tpl name="layout_row_settings">
+    <div id="styles" class="layout_row_settings"></div>
+
+    <div class="popup_buttons"><div class="popup_buttons_wrapper">
+        <wsc_button class="float_right" title=" Close " events="onclick=onCancelClick" />
+    </div></div>
+</tpl>

@@ -1,0 +1,10 @@
+<tpl name="site_settings_timezone">
+    <div id="content_timezone" style="display: none">
+        <div class="form_row">
+            <b>What time zone will your site operate in?</b><br/>
+            <wsc_select name="timezone" id="inp_timezone"/>
+            <br/><br/><b>What is the name of your timezone area?</b><br/>
+            <wsc_textarea name="timezone_notes" id="inp_timezone_notes" style="width: 100%; height: 215px;"/>
+        </div>
+    </div>
+</tpl>    

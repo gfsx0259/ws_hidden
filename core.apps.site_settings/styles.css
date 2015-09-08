@@ -1,0 +1,12 @@
+.site_settings {}
+
+    .site_settings .popup_sidebar {
+        height: 440px;
+    }
+
+
+    .site_settings .popup_right_panel {
+        width: 620px; 
+        height: 420px;
+        padding: 10px;
+    }

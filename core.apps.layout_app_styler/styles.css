@@ -1,0 +1,25 @@
+.layout_app_styler {
+    width: 700px;
+    height: 400px;
+    overflow: auto;
+}
+
+
+    .layout_app_styler .item {
+        width: 25%;
+        float: left;
+        position: relative;
+        cursor: pointer;
+    }
+
+
+    .layout_app_styler .active_icon {
+        position: absolute;
+        z-index: 10;
+        left: 50%;
+        top: 50%;
+        width: 108px;
+        height: 100px;
+        margin: -50px 0 0 -54px;
+        background: transparent url(/static/images/selected.png) no-repeat;
+    }

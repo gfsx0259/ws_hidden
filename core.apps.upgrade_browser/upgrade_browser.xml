@@ -1,0 +1,36 @@
+<tpl name="upgrade_browser">
+
+    <p>
+    Your web browser is old version or not compilant. 
+    Our editor is optimised for newer web browser versions. 
+    Please update your web browser to the latest version or download a web browser from another provider. 
+    </p>
+
+    <div class="list">
+        <a class="list_item" href="http://www.mozilla.org/firefox/" target="_blank">
+            <img src="/static/upgrade_browser/firefox.png"/>
+            Firefox
+        </a>
+
+        <a class="list_item" href="http://www.google.com/chrome" target="_blank">
+            <img src="/static/upgrade_browser/chrome.png"/>
+            Chrome
+        </a>
+
+        <a class="list_item" href="http://www.opera.com/download/" target="_blank">
+            <img src="/static/upgrade_browser/opera.png"/>
+            Opera
+        </a>
+
+        <a class="list_item" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank">
+            <img src="/static/upgrade_browser/ie.png"/>
+            IE
+        </a>
+
+        <a class="list_item" href="http://www.apple.com/safari/download/" target="_blank">
+            <img src="/static/upgrade_browser/safari.png"/>
+            Safari
+        </a>
+    </div>
+
+</tpl>

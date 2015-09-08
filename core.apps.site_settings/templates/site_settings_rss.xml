@@ -1,0 +1,9 @@
+<tpl name="site_settings_rss">
+    <div id="content_rss" style="display: none">
+        <div class="form_row">
+        Here you can set the title of the rss feed of your site.<br/><br/>
+            <label>RSS Title</label>
+            <wsc_text id="inp_rss_title"/>
+        </div>
+    </div>
+</tpl>    
