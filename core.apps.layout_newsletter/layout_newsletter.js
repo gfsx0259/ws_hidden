@@ -11,5 +11,5 @@ core.apps.layout_newsletter = function(args) {
         this.title = "Newsletters";
     }
 
-}
+};
 core.apps.layout_newsletter.extendPrototype(core.components.html_component);

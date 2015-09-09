@@ -36,7 +36,7 @@ core.apps.layout_forum = function(args) {
             break;
     }
 
-}
+};
 
 core.apps.layout_forum.prototype = {
 
@@ -128,7 +128,7 @@ core.apps.layout_forum.prototype = {
             title: t,
             content: c,
             category_id: core.data.forum_category.id
-        }
+        };
 
 
         switch(this.post_editor_mode) {
@@ -197,19 +197,19 @@ core.apps.layout_forum.prototype = {
     // topic
 
     deleteTopic: function() {
-        desktop.modal_dialog.confirm("Delete topic?", this.deleteTopic—onfirmed.bind(this));
+        desktop.modal_dialog.confirm("Delete topic?", this.deleteTopicConfirmed.bind(this))
     },
 
 
-    deleteTopic—onfirmed: function() {
-        desktop.setState("loading");
+    deleteTopicConfirmed: function () {
+    desktop.setState("loading");
 
         var p = {
             dialog: "forum",
             act: "delete_topic",
             id: core.data.forum_topic.id,
             category_id: core.data.forum_category.id
-        }
+        };
 //        core.transport.send("/controller.php", p, this.onTopicDeleteResponce.bind(this));
         core.transport.send("/controller.php", p, this.onTopicDeleteResponce.bind(this), "POST");
     },
@@ -242,5 +242,4 @@ core.apps.layout_forum.prototype = {
 
 
 };
-
 core.apps.layout_forum.extendPrototype(core.components.html_component);

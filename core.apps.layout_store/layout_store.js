@@ -22,7 +22,7 @@ core.apps.layout_store = function(args) {
         this.title = mt;
     }
 
-}
+};
 
 
 
@@ -78,7 +78,7 @@ core.apps.layout_store.prototype = {
         var fp = {
             parent_el: this.$["product_form"],
             disable_submit: true
-        }
+        };
         this.form.setProperties(fp);
     },
 
@@ -91,7 +91,7 @@ core.apps.layout_store.prototype = {
             dialog: "forms_manager",
             act: "get",
             id: fid
-        }
+        };
         core.transport.send("/controller.php", p, this.onFormDataResponce.bind(this));        
     },
 
@@ -166,7 +166,7 @@ core.apps.layout_store.prototype = {
             $('scart_icon_text').innerHTML = '<span>Shopping Cart</span> '+r.data.items_num+' item/s | $'+r.data.total+' value'
         }
         if(r.data.redirect_to_page) {
-                desktop.ecom_cart.gotoCheckoutPage(r.data.redirect_to_page, r.data.checkout_ssl);
+            desktop.ecom_cart.gotoCheckoutPage(r.data.redirect_to_page, r.data.checkout_ssl);
         } else {
             if($('shoppingCartTblBox')) {
                 for(var id in desktop.layout.apps) {

@@ -5,7 +5,7 @@ core.apps.send_emails_to_friends = function() {
     if(!core.data.email_templates) {
         core.data.email_templates = {};
     }
-}
+};
 
 
 core.apps.send_emails_to_friends.prototype = {
@@ -38,7 +38,7 @@ core.apps.send_emails_to_friends.prototype = {
                 dialog: "emails_manager",
                 act: "get_template",
                 key: "tell_to_friends%"
-            }
+            };
             this.loadTemplateFlag=1;
             core.transport.send("/controller.php", p, this.onGetTemplateResponce.bind(this));
     },
@@ -57,7 +57,7 @@ core.apps.send_emails_to_friends.prototype = {
                     dialog: "emails_manager",
                     act: "get_template",
                     key: k
-                }
+                };
                 this.loadTemplateFlag=0;
                 core.transport.send("/controller.php", p, this.onGetTemplateResponce.bind(this));
         }
@@ -222,7 +222,7 @@ core.apps.send_emails_to_friends.prototype = {
                 sendtouser:send_to_user,
                 addtorecipients:add_to_recipients,
                 emails: emailStr
-            }
+            };
             core.transport.send("/controller.php", p, this.onEmailsStatus.bind(this));
 
 
@@ -294,6 +294,6 @@ core.apps.send_emails_to_friends.prototype = {
     }
 
 
-}
+};
 core.apps.send_emails_to_friends.extendPrototype(core.components.html_component);
 core.apps.send_emails_to_friends.extendPrototype(core.components.popup_app);

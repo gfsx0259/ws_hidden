@@ -46,7 +46,7 @@ core.apps.layout_user = function(args) {
             break;
     }
 
-}
+};
 
 
 core.apps.layout_user.prototype = {
@@ -56,12 +56,12 @@ core.apps.layout_user.prototype = {
 
     onLoginClick: function() {
         var p = {
-            dialog: "site_users",
+            dialog: "users_manager",
             act: "login",
             email: this.$["inp_l_email"].value.trim(),
             pwd: this.$["inp_l_pwd"].value.trim(),
             remember_me: this.$["inp_l_remember_me"].checked ? 1 : 0
-        }
+        };
 
         if(p.email == "" || p.pwd == "") return;
         this.hideElement("l_error");
@@ -82,17 +82,17 @@ core.apps.layout_user.prototype = {
 
     // Register
     loadRegCaptcha: function() {
-        this.$["reg_captcha_img"].src = "/controller.php?dialog=site_users&act=reg_captcha&_=" + Math.random();
+        this.$["reg_captcha_img"].src = "/controller.php?dialog=users_manager&act=reg_captcha&_=" + Math.random();
     },
 
 
     onRegisterClick: function(e) {
         var p = {
-            dialog: "site_users",
+            dialog: "users_manager",
             act: "register",
             email: this.$["inp_r_email"].value.trim(),
             captcha_code: this.$["inp_r_captcha_code"].value.trim()
-        }
+        };
 
         if(p.email == "") {
             this.showRegFormError("Incorrect email");
@@ -169,10 +169,10 @@ core.apps.layout_user.prototype = {
         if(email == "") return;
         this.$["btn_rp_submit"].disabled = true;
         var p = {
-            dialog: "site_users",
+            dialog: "users_manager",
             act: "reset_pwd",
             email: email
-        }
+        };
         core.transport.send("/controller.php", p, this.onResetPwdResponce.bind(this));        
     },
 

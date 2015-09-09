@@ -11,7 +11,7 @@ core.apps.multi_texts = function(args) {
         endDate: null,
         ids: []
     };
-}
+};
 
 
 
@@ -52,6 +52,6 @@ core.apps.multi_texts.prototype = {
     getUsedTexts: function() {
         return this.profile["ids"];
     }
-}
+};
 core.apps.multi_texts.extendPrototype(core.components.html_component);
 core.apps.multi_texts.extendPrototype(core.components.desktop_app);

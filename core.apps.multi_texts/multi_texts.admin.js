@@ -75,7 +75,7 @@ core.apps.multi_texts.extendPrototype({
         this.profile["startDate"] = this.tmp["startDate"];
         this.profile["endDate"] = this.tmp["endDate"];
         var p = {
-            dialog: "texts",
+            dialog: "texts_manager",
             act: "get_multiple",
             tags: this.profile["tags"],
             startDate: this.profile["startDate"],
@@ -111,7 +111,7 @@ core.apps.multi_texts.extendPrototype({
     },
 
     showDatePicker: function(e, s) {
-        var pos = new Array(e.clientX,e.clientY);
+        var pos = [e.clientX,e.clientY];
 
         var w = this;
         core.externals.datepicker({

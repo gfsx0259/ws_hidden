@@ -4,5 +4,5 @@ core.apps.layout_document = function(args) {
     this.callFunction("initAdmin");
     
 
-}
+};
 core.apps.layout_document.extendPrototype(core.components.html_component);

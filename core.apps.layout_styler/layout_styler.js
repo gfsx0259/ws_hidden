@@ -1,6 +1,6 @@
 core.apps.layout_styler = function() {
 
-}
+};
 
 core.apps.layout_styler.prototype = {
 
@@ -206,6 +206,6 @@ core.apps.layout_styler.prototype = {
         desktop.hidePopupApp();
     }
 
-}
+};
 core.apps.layout_styler.extendPrototype(core.components.html_component);
 core.apps.layout_styler.extendPrototype(core.components.popup_app);

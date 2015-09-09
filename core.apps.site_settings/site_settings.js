@@ -2,7 +2,7 @@ core.apps.site_settings = function() {
 
     this.needCalCategoriesRefresh = true;
 
-}
+};
 
 
 core.apps.site_settings.prototype = {
@@ -29,7 +29,7 @@ core.apps.site_settings.prototype = {
         var r = {
             dialog: "site_settings",
             act: "get_data"
-        }
+        };
         core.transport.send("/controller.php", r, this.onDataResponce.bind(this));
     },
 
@@ -37,14 +37,8 @@ core.apps.site_settings.prototype = {
     onDataResponce: function(res) {
         desktop.setState("normal");
         if(res && res.status == "ok") {
-            this.createEmailsList(res.email_list)
             this.setData(res.data);
             this.showBar("emails");
-
-            if(core.data.scheme["seo_analytics_code"] == 0) {
-                this.hideElement("box_analytics_allowed");
-                this.showElement("box_analytics_not_allowed");
-            }
         } else {
             desktop.modal_dialog.alert("Server error.");
         }
@@ -173,7 +167,7 @@ core.apps.site_settings.prototype = {
             dialog: "site_settings",
             act: "set_data",
             data: php_serialize(d)
-        }
+        };
         core.transport.send("/controller.php", p, this.onDataSaved.bind(this), "POST");
         desktop.setState("loading");
     },
@@ -217,7 +211,7 @@ core.apps.site_settings.prototype = {
             header_visible: this.$["inp_header_visible"].checked ? 1 : 0,
             footer_visible: this.$["inp_footer_visible"].checked ? 1 : 0,
             default_rows_page_id: this.$["inp_default_rows_page_id"].value
-        }
+        };
         return d;
     },
 
@@ -255,6 +249,6 @@ core.apps.site_settings.prototype = {
     }
 
 
-}
+};
 core.apps.site_settings.extendPrototype(core.components.html_component);
 core.apps.site_settings.extendPrototype(core.components.popup_app);

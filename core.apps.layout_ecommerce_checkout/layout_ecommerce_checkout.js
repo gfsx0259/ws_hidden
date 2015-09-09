@@ -6,7 +6,7 @@ core.apps.layout_ecommerce_checkout = function(args) {
     this.origBorderColor = '';
     this.states_list = window["states_list"] || null;
 
-}
+};
 
 core.apps.layout_ecommerce_checkout.prototype = {
 
@@ -165,7 +165,7 @@ core.apps.layout_ecommerce_checkout.prototype = {
             postcode: pc ? pc : "",
             country_id: $("inp_country").value, 
             state_id: $("inp_state_id").value
-        }
+        };
         core.transport.send('/controller.php', p, this.freghtResponce.bind(this));
     },
 
@@ -737,7 +737,7 @@ core.apps.layout_ecommerce_checkout.prototype = {
             // set up color restore function
             var color = this.origBorderColor;
             if(el) {
-                el.onfocus = function(){this.style.borderColor = color;}
+                el.onfocus = function(){this.style.borderColor = color;};
                 // hightlight with red color
                 el.style.borderColor = 'red';
             }
@@ -902,7 +902,7 @@ core.apps.layout_ecommerce_checkout.prototype = {
             act: "cart_add_customer",
             email: email, 
             pwd: pwd
-        }
+        };
         core.transport.send('/controller.php', p, this.onCustomerInfoResponce.bind(this));
     },
 
@@ -916,7 +916,7 @@ core.apps.layout_ecommerce_checkout.prototype = {
             return;
         }
         for(var k in r.data.customer) {
-            if(k == "id" || k == "site_id") continue;
+            if(k == "id") continue;
             var el = $("inp_" + k);
             if(el) {
                 el.value = r.data.customer[k];
@@ -930,5 +930,5 @@ core.apps.layout_ecommerce_checkout.prototype = {
         this.updateContent_DefaultViewEx(this.cart);
     }
 
-}
+};
 core.apps.layout_ecommerce_checkout.extendPrototype(core.components.html_component);

@@ -1,4 +1,4 @@
-core.apps.layout_row_settings = function() {}
+core.apps.layout_row_settings = function() {};
 
 
 core.apps.layout_row_settings.prototype = {
@@ -31,7 +31,7 @@ core.apps.layout_row_settings.prototype = {
             layout_row255: "footer",
             layout_row1: "body",
             layout_row0: "header"
-        }
+        };
         this.setTitle("Select " + titles[core.values.layout_row_settings.key] + " row style");
     },
 
@@ -41,6 +41,6 @@ core.apps.layout_row_settings.prototype = {
     }
 
 
-}
+};
 core.apps.layout_row_settings.extendPrototype(core.components.html_component);
 core.apps.layout_row_settings.extendPrototype(core.components.popup_app);

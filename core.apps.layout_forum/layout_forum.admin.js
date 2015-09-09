@@ -102,7 +102,7 @@ core.apps.layout_forum.extendPrototype({
 
 
 
-    // TODO: это нужно?
+    // TODO: я┐╜я┐╜ я┐╜ужня┐╜?
     updateCategoriesControls: function() {
     /*
         for(var i=0; i<this.categories.length; i++) {
@@ -127,7 +127,7 @@ core.apps.layout_forum.extendPrototype({
             title: "New category" + this.categories.length,
             description: "",
             order_id: this.max_order_id
-        }
+        };
         this.categories.push(c);
         this.renderCategory(this.categories.length - 1);
         this.updateCategoriesControls();
@@ -194,7 +194,7 @@ core.apps.layout_forum.extendPrototype({
             act: "update_categories",
             data: php_serialize(this.categories),
             del: php_serialize(this.deleted_categories)
-        }
+        };
         core.transport.send("/controller.php", p, this.onCategoriesUpdated.bind(this), "POST");
     },
 

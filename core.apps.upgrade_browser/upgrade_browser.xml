@@ -8,27 +8,27 @@
 
     <div class="list">
         <a class="list_item" href="http://www.mozilla.org/firefox/" target="_blank">
-            <img src="/static/upgrade_browser/firefox.png"/>
+            <img src="/js_apps/core.apps.upgrade_browser/images/firefox.png"/>
             Firefox
         </a>
 
         <a class="list_item" href="http://www.google.com/chrome" target="_blank">
-            <img src="/static/upgrade_browser/chrome.png"/>
+            <img src="/js_apps/core.apps.upgrade_browser/images/chrome.png"/>
             Chrome
         </a>
 
         <a class="list_item" href="http://www.opera.com/download/" target="_blank">
-            <img src="/static/upgrade_browser/opera.png"/>
+            <img src="/js_apps/core.apps.upgrade_browser/images/opera.png"/>
             Opera
         </a>
 
         <a class="list_item" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank">
-            <img src="/static/upgrade_browser/ie.png"/>
+            <img src="/js_apps/core.apps.upgrade_browser/images/ie.png"/>
             IE
         </a>
 
         <a class="list_item" href="http://www.apple.com/safari/download/" target="_blank">
-            <img src="/static/upgrade_browser/safari.png"/>
+            <img src="/js_apps/core.apps.upgrade_browser/images/safari.png"/>
             Safari
         </a>
     </div>

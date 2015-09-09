@@ -109,7 +109,7 @@ core.apps.layout_search_results = function(args) {
     }
 
 
-}
+};
 
 
 core.apps.layout_search_results.prototype = {
@@ -165,6 +165,6 @@ core.apps.layout_search_results.prototype = {
         }
     }
 
-}
+};
 
 core.apps.layout_search_results.extendPrototype(core.components.html_component);

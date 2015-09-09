@@ -53,6 +53,6 @@ core.apps.layout_page_access = function(args) {
 
     this.showElement("box_" + core.data.access_error);
 
-}
+};
 
 core.apps.layout_page_access.extendPrototype(core.components.html_component);
